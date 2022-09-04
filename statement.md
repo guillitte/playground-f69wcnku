@@ -1,4 +1,4 @@
-# Welcome!
+# Méthdode d'Archimede 
 
 This Python template lets you get started quickly with a simple one-page playground.
 
@@ -60,6 +60,10 @@ def archimedePrecision(epsilon=10e-16):
     return a,b,n
 
 print(archimedePrecision(10e-12))
+
+# Calcule l'arcsinus d'un angle par la méthode d'archimede
+# Epsilon est la prècision souhaitée
+
 
 def arcsinus(x,epsilon=10e-16):
     a = x
