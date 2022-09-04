@@ -61,21 +61,33 @@ def archimedePrecision(epsilon=10e-16):
 
 print(archimedePrecision(10e-12))
 
-# Calcule l'arcsinus d'un angle par la méthode d'archimede
+# Calcule l'arcsinus d'un nombre par la méthode d'archimede
 # Epsilon est la prècision souhaitée
 
 
 def arcsinus(x,epsilon=10e-16):
     a = x
     b = x/sqrt(1-x*x)
-    n = 1
     while b-a>epsilon:
         b = (2*a*b)/(a+b)
         a = sqrt(b*a)
-        n *= 2
     return a
 
 a =arcsinus(sin(.4))
+print(a)
+
+# Calcule l'arctangente d'un nombre par la méthode d'archimede
+# Epsilon est la prècision souhaitée
+
+def arctangente(x,epsilon=10e-16):   
+    a = x/sqrt(1+x*x)
+    b = x
+    while b-a>epsilon:
+        b = (2*a*b)/(a+b)
+        a = sqrt(b*a)
+    return a
+
+a =arctangente(tan(.5))
 print(a)
 
 
