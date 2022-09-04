@@ -1,4 +1,4 @@
-# Méthdode d'Archimede 
+# Méthode d'Archimede 
 
 Ces fonctions en python donnent des approximations du nombre pi par la méthde d'archimede
 
