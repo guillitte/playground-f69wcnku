@@ -1,6 +1,6 @@
 # Méthdode d'Archimede 
 
-This Python template lets you get started quickly with a simple one-page playground.
+Ces fonctions en python donnent des approximations du nombre pi par la méthde d'archimede
 
 ```python runnable
 from math import sin,tan,pi
@@ -89,6 +89,7 @@ def sinus(x,n=24):
 print(sinus(pi/3),sin(pi/3))
 ```
 
-# Advanced usage
+# Améliorations possibles
 
-If you want a more complex example (external libraries, viewers...), use the [Advanced Python template](https://tech.io/select-repo/429)
+Les fonctions arcsinus et sinus présentées ici sont limitées au premier quadrant. 
+Il est possible de les étendre en utilisant les symétries de leur graphique.
