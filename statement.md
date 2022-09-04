@@ -18,7 +18,7 @@ from math import sqrt
 # en partant du carré
 # Le nombre de côtés est 4 * 2**n
 
-def archimede(n):
+def archimede4(n):
     a = 2*sqrt(2)
     b = 4
     for i in range(n):
@@ -26,7 +26,7 @@ def archimede(n):
         a = sqrt(b*a)
     return a,b
 
-print(archimede(10))
+print(archimede4(10))
 
 
 # Calcule le demi périmetre des polygones inscrits et circonconscrits
